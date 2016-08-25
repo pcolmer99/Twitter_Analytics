@@ -15,10 +15,14 @@ All the code cited in this article is contained with the R files I have supplied
 Twitter_Analytics_Import.R allows you specify a search string and how many tweets to bring back in the query.  You'll need to edit the following variables in the code to vary the search string criteria and the number of tweets to return:
 
 search.string <- "#MyWorkStyle"
+
 no.of.tweets <- 50
 
 Enjoy
 
+
+
 Paul Colmer
+
 @MusicComposer1
 
