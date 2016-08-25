@@ -4,22 +4,9 @@
 
 ## (C) Paul Colmer 2016
 
-## 0.5 hrs
+## 1 hrs
 
-## Setup Packages and Libraries
-## ROAuth:    Provides an interface to the OAuth 1.0 specification
-##            allowing users to authenticate via OAuth to the server of their choice.
-##            Type ?ROAuth in the console for help
-## Twitter:   Provides an interface to the Twitter web API
-##            Type ?twitteR in the console for help
-
-install.packages("twitteR")
-library("twitteR")
-install.packages("ROAuth")
-library("ROAuth")
-
-## Setup Working Directory
-setwd("C:/Users/pcolmer/OneDrive for Business 1/R Studio/Twitter Analytics")
+## Packages and Libraries already setup in Twitter_Analytics_Setup.R
 
 ## Load in the cred object which allows us to access the Twitter acount
 load("twitter authentication.Rdata")
