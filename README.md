@@ -5,7 +5,9 @@ Hi Readers,
 My name is Paul Colmer. There are 3 files I have published that will help you to interrogate Twitter:
 
 File 1 - Authenticate correctly with Twitter (Twitter_Analytics_Setup.R)
+
 File 2 - Allow you to search twitter for tweets that match your search criteria (Twitter_Analytics_Import.R).  
+
 File 3 - Same as 2 but using a Shiny App, allowing you to run the function via a web browser (Twitter_Analytics_App.R).
 
 Twitter_Analytics_Setup.R sets up the correct handshake between R and Twitter to allow you to extract data from Twitter.  You'll need to follow this article carefully, as there are some manual steps involved:
