@@ -2,7 +2,9 @@
 
 Hi Readers,
 
-My name is Paul Colmer. The two files here are written to help you authenticate correctly with Twitter and then allow you to search twitter for tweets that match your search criteria.
+My name is Paul Colmer. There are 3 files I have published.  Two of the files here are written to help you authenticate correctly with Twitter (Twitter_Analytics_Setup.R) and then allow you to search twitter for tweets that match your search criteria (Twitter_Analytics_Import.R).  
+
+The third file shows how to turn the Twitter_Analytics_Import.R code into a Shiny App, so that it can be run from the web browser.  This file is called Twitter_Analytics_App.R.
 
 Twitter_Analytics_Setup.R sets up the correct handshake between R and Twitter to allow you to extract data from Twitter.  You'll need to follow this article carefully, as there are some manual steps involved:
 
@@ -17,6 +19,8 @@ Twitter_Analytics_Import.R allows you specify a search string and how many tweet
 search.string <- "#MyWorkStyle"
 
 no.of.tweets <- 50
+
+Twitter_Analytics_App.R allows you to specify the search string using an input function, and the number of tweets, using a slider bar.
 
 Enjoy
 
