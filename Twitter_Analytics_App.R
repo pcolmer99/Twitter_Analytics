@@ -45,18 +45,13 @@ ui <- fluidPage(
 
 ## Setup the Server code
 server <- function(input, output) {
-  
-  ## Include all the code in the reactive function to work in Shiny
-  twitcount <- reactive({
-    tweets <- searchTwitter(input$twitsearch, n=input$twitnum, lang="en")
-    df <- do.call("rbind", lapply(tweets, as.data.frame))
-    twitcount <- table(df$screenName)
-  })
-  
   ## This produces the barplot using twitcount.  It shows the number of
   ##   tweets for each twitter user, that matches the search string
   output$twitchart <- renderPlot({ 
-    barplot(twitcount(), las=2, cex.names=0.5)
+    tweets <- searchTwitter(input$twitsearch, n=input$twitnum, lang="en")
+    df <- do.call("rbind", lapply(tweets, as.data.frame))
+    twitcount <- table(df$screenName)
+    barplot(twitcount, las=2, cex.names=0.5)
   })
 }
 
